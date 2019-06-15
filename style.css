@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+/*
+	New Perspectives on HTML5 and CSS3, 7th Edition
+    Project: V2
+    Author: Afrah Al-tamimi
+    Date:  05-10-2019 
+
+    Filename: style.css
+*/
+
+/*M3LO9 Demonstrate fixed, static, or inherited positioning*/
+
+/*M4LO2 Demonstrate the use of background images (CSS)*/
+
+html {
+	background: url(cloudnew.jpg) 100% / cover fixed;
+}
+/*M3LO1 Demonstrate the use of CSS reset styles*/
+
+body {
+	background: transparent;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-family: sans-serif;
+}
+body {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 950px;
+	min-width: 630px;
+	width: 93%;
+	box-shadow: white 25px 0px 25px, white -25px 0px 25px;
+}
+figure.woman img {
+	display: block;
+	clear: both;
+	margin: auto;
+	width: 100%;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	text-align: center;
+}
+/*M4LO6 Demonstrate the use of opacity/transparency for images (see "Creating Semi-Transparent Objects" in Tutorial 4 (4-9 in the e-book)) (CSS)*/
+
+header > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	opacity: .5;
+	border-radius: 30px;
+}
+/*M3LO2 Demonstrate floating elements*/
+
+.clear {
+	clear: both;
+}
+
+nav.horiz ul{
+	display: flex;
+	justify-content: space-between;
+}
+nav.horiz li {
+	background-image: linear-gradient(#59A7E5, white);
+	font-size: 2em;
+	text-align: center;
+	list-style: none;
+	border-radius: 8px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+nav.horiz li a,
+nav.horiz li a:visited
+{
+	border-radius: 8px;
+	text-decoration: none;
+	color: #333;
+	padding: 10px;
+	display: block;
+}
+nav.horiz li a:hover {
+	background-image: linear-gradient(white, white);
+}
+
+nav.horiz ul {
+	padding-left: 0;
+}
+
+nav.horiz ul ul.subnav{
+	display: none;
+}
+nav.horiz ul li:hover ul.subnav{
+	display:block;
+	position: absolute;
+}
+nav.horiz ul ul.subnav li{
+	flex-direction: column;
+	font-size: 1em;
+}
+
+/*M4LO1 Demonstrate the use of figure boxes (HTML)*/
+
+figcaption {
+	text-align: center;
+	background: white;
+}
+h2 {
+	clear: both;
+}
+/*M3LO8 Demonstrate absolute or relative positioning*/
+
+/*gradiant from https://www.colorzilla.com/gradient-editor/*/
+
+/*M4LO3 Demonstrate the use of rounded corners for borders (CSS)*/
+
+/*M4LO4 Demonstrate the use of gradients (CSS)*/
+
+/*M4LO8 Demonstrate the use of transformations for 2D or 3D images (CSS, use the transform property as covered in Tutorial 4 and explain its impact on the HTML)*/
+
+/*M4LO5 Demonstrate the use of text or box shadowing */
+
+#badge {
+	position: absolute;
+	width: 175px;
+	border-radius: 50px;
+	height: 175px;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+	background: -webkit-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+	transform: rotate(-45deg);
+	top: -20px;
+	left: -20px;
+	box-shadow: 5px 5px 5px;
+}
+article {
+	padding: 25px;
+}
+#badge h3 {
+	position: relative;
+	top: -75px;
+	color: #369;
+	text-align: center;
+}
+#badge img {
+	display: block;
+	width: 100%;
+}
+/*M3LO4 Demonstrate removing container collapse by having a container element with a style rule that expands it around its floated content*/
+
+nav.horiz::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+/*M3LO3 Demonstrate a clearing float */
+
+/*M2LO3A Demonstrate style precedence in CSS -this will take precendance over all the other styles */
+
+p {
+	color: black;
+}
+body {
+	color: black;
+}
+/*M2LO3B Demonstrate style inheritance in CSS - this will inherit things from its parent element*/
+
+article {
+	color: black;
+}
+p {
+	text-align: center;
+}
+/*M2LO5 Demonstrate contextual selectors*/
+
+footer {
+	clear: both;
+	position: relative;
+	border-radius: 20px;
+	background-image: linear-gradient(#59A7E5, white);
+}
+footer {
+	color: black;
+	font-size: 20px;
+	text-align: center;
+}
+/*M2LO6A  Demonstrate a CSS id selector- this targets a spacified things and does something to it*/
+
+#relief {
+	color: black;
+}
+/*M2LO6B  Demonstrate a CSS class selector - a class selceotr allows us to create a class and call that class to do some styling*/
+
+.health {
+	color: black;
+}
+/*M2LO7 Demonstrate a CSS attribute selector other than class or id -this targets something without calling a class or id */
+
+a[href="https://lowbackpainprogram.com/hip-raise-test-for-back-pain/"] {
+	color: black;
+}
+/*M2LO11B Demonstrate a pseudo-element selector - this targets the elements properties and allows us to do special things with it*/
+
+p::first-letter {
+	color: black;
+	font-size: 125%;
+}
+/*M2LO12 Demonstrate how CSS can change presentation of page elements - this is changing the background color*/
+
+body {
+	background-color: #59A7E5;
+}
+/*M2LO13 Demonstrate how CSS can change presentation of textual elements - this is transforming text to uppercase for the heading1*/
+
+h1 {
+	text-transform: uppercase;
+}
+
+/*M2LO14 Demonstrate and explain the use of progressive enhancement in CSS -this allows us to be able to run both colors on different browsers if the browsers are not updated, it allows us to stay consistant.*/
+
+/*html{
+background-color: rgb(111, 116, 117);
+background-color: hsl(179, 5%, 45%);
+}*/
+
+/*M2LO15 Apply colors using CSS - i used a background color for the headings all of them*/
+
+/*h1{
+background-color: rgb(111, 116, 117);
+}
+
+h2{
+background-color: rgb(111, 116, 117);
+}*/
+
+/*M7LO11 Demonstrate how to format a form with CSS (group your form styles together in your CSS file, and document their overall impact on the form) */
+/*give the form some space*/
+form{
+	display: block;
+	padding: 20px;
+	margin: 20px;
+}
+
+/*make labels and form elements live on their own lines and give them spacing from each other*/
+form input, 
+label,
+select {
+	display:block;
+	margin: 8px;
+}
+/*make an exception because I want the words next to checkbox to be next to, not on its own line*/
+input[type=checkbox] {
+	display: inline-block;
+}
+
+/*Give the text boxes a fat, modern look*/
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+/*give the input an indicator when its in focus*/
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+/*widen up the text inputs*/
+input[type=text]{
+	width:300px;
+}
+/*fat, modern select, textarea and input button styles*/
+select {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  height: inherit;
+  vertical-align: initial;
+}
+input[type=submit]{
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	background: #336699;
+}
+textarea {
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	width: 500px;
+	height: 300px;
+}
+/*force font-family because textarea is defaulting to mono-space*/
+input, select, textarea{
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+/*M8LO12 Demonstrate how to format media with CSS (CSS, group your media styles together and describe their overall impact on the media feature of your page)*/
+/* make sure the video isn't too big, fits on the page and is centered */
+video, iframe{
+	display: block;
+	margin: 0 auto;
+	max-width: 720px;
+	margin-bottom: 25px;
+}
+
+/*M8LO10 Demonstrate a CSS animation or transition (CSS, identify which is being done and its impact on the rendered HTML; note it has to include a time aspect, not be immediate)*/
+/* give an active transition to let the user know what video is being hovered over; The transition takes 2s to happen fully before the opacity reaches .5*/
+video:hover,
+iframe:hover{
+	opacity: .5;
+	transition: 2s;
+}
+
+@media screen and (max-width: 480px) {
+	body{
+		min-width: inherit;
+	    margin-top: 45px;
+	}
+	#badge {
+		width: 100%;
+		position: absolute;
+		border-radius: 10px;
+		height: 35px;
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+		background: -webkit-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+		transform: none;
+		top: 0;
+		left: 0;
+		box-shadow: 5px 5px 5px;
+	}
+	#badge h3{
+		display: inline-block;
+		color: white;
+		top: -10px;
+	}
+	#badge img {
+		max-width:35px;
+		display: inline-block;
+	}
+	nav.horiz ul {    
+		flex-direction: column;  
+	}  
+	nav.horiz ul li {
+		/*display: none;*/
+	}
+	nav.horiz ul li a{
+		padding: 3px;
+		font-size: smaller;
+		margin-top: 3px;
+	}
+	nav.horiz ul li:hover ul.subnav{
+		width: 80%;
+		background: rgba(255,255,255,.7);
+		border-radius: 8px;
+		padding: 3px;
+	}
+}

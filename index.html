@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!--M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page- this includes all the head and body tags-->
+   <head>
+      <!--   
+         New Perspectives on HTML5 and CSS3, 7th Edition
+            Project: V4
+            Author: Afrah Al-tamimi
+            Date:  05-27-2019 
+         
+            Filename: index.html
+         -->
+      <meta charset="utf-8" />
+      <title>Physical Therapy At Home</title>
+      <!--M1LO8 Demonstrate the use of external style sheets - this links our css file and allows us to add that style to this html file.-->
+      <link href="style.css" rel="stylesheet"/>
+      <!-- M2LO4A Demonstrate embedded styles - this allows us to change color from inside the html file and be able to add style -->
+      <!-- <style>
+         h1,h2{
+           color: black;
+           text-align: center;
+         }
+          
+         </style>
+         -->
+   </head>
+   <body>
+      <!--M3LO8 Demonstrate absolute or relative positioning -->
+      <div id="badge">
+         <img src="badge1.png" alt="metal"/>
+         <h3>Websites by Amy</h3>
+      </div>
+      <!--M2LO4B Demonstrate inline styles -this makes a nice page name-->
+      <h1 style="color: #252222; text-align: center;">Exercise at Home</h1>
+      <!--M1LO9 Demonstrate the use of inline images - this allows us to add an image-->
+      <header>
+         <img src="spine2.jpg" alt=" spine" />
+      </header>
+      <nav class="horiz">
+         <!--M1LO12 Create navigation using unordered lists - this allows us to be able to know how to get around in the website.-->
+         <!--M1LO13A Demonstrate a hyperlink to another page on your site -this is links to the about page-->
+         <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+			<li><a href = "contact.html">Contact</a></li>
+			<li><a href = "videos.html">Videos</a></li>
+            <li>
+				<a href = "exercises.html">Exercises</a>
+			</li>
+			<!--M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas)-->
+            <li><a href = "pain.html">Pain Management</a>
+   				<ul class="subnav">
+					<li><a href="exercises.html">Exercise</a></li>
+					<li><a href="medication.html">Medication</a></li>
+				</ul>
+			</li>
+      </ul>
+      </nav>
+      <div class = "clear">
+      </div>
+      <h2>About the Spine</h2>
+      <p>
+         For people with spinal issues it is really important to care for the spine and not fully depend on the spine to do the work for us. It is important to have good posture, I have had bad posture all my life and I've developed spinal issues because of the lack of self care. I soon realized that it is vital to care for our bodies and to make sure everything we do revolves around good posture and spinal care. Our spine is really important it is after all our back backbone! We can do little changes in our lives to live a healthier more productive and pain free life with some self care and effort we can achieve that. 
+      </p>
+      <h2 class="health">Who is this for?</h2>
+      <p class="health">
+         This is for people who have spinal issues like slipped disks and other back problems, I can't guarantee that every exercise will work for you but it's all about trial and error, we have to try and test things out before we know that it won't work for us. If you are tired of going to a physical therapist and simply don't have time to drive there and pay for it you can follow simple steps to improve your health and enjoy life pain free, or less pain. I am a huge advocate for pushing people to do it even if they don't see progress right away because I believe that anyone can do these work outs from home or even from work, they are simple and easy to follow.
+      </p>
+      <figure class = woman>
+         <img src="womannew.jpg" alt="lady"/>
+         <figcaption>Pain From Sitting</figcaption>
+      </figure>
+      <br><br>
+      <h2 id="relief">Relief if Sitting is an Issue</h2>
+      <p>
+         If you have problems sitting down, then here are a few steps you can take to relieve back problems when sitting down. Number one use a towel rolled up and put it behind your back to allow a nice back extension to avoid having your back curved in a way that is uncomfortable and painful on the back.
+         Number to put an ice pack behind your back if you're sitting on the couch watching TV or doing homework this will help with the inflammation and will also help reduce the pain level slightly to make it more manageable.
+         Number three when sitting make sure to have a good posture and feet straight not pigeon toed this will help with how your body is positioned and reduce pain  this is due to being a natural form and in the right position so there's no strain on the spine.
+      </p>
+      <h2>Impacts on your stress levels</h2>
+      <p>
+         When there's stuff going on your in your life and you have pain it will make your stress levels even higher. It is really important to seek help before things get worse, stress can have a huge impact on Work school being a parent being a partner and even being the best you. We have to recognize when our stress levels are rising, stress can have a huge impact on our lives and pain just contributes to it. The best way to reduce stress is to do something about it. And the first step to do something about it is to realize that our spine will not heal on its own and that it is really important that we take action to reduce our pain instead of relying on pain medication and for the pain to go Away on its own. Our lives can get really complicated when we have pain and don't know how to manage it so the best thing we could do is educate ourselves on how to reduce pain. 
+      </p>
+      <footer>
+         <h3>External Resources</h3>
+         <!--M1LO13C Demonstrate a hyperlink to an external page - this send us to another website for extra resources-->
+         <a href="https://lowbackpainprogram.com/hip-raise-test-for-back-pain/" style = "display: block">Hip Raise Benifits</a>
+         <!--M1LO10 Demonstrate the use of special characters from extended character sets - this allows us to add things like bullets-->
+      </footer>
+   </body>
+</html>

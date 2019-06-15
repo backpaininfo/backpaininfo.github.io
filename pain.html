@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!--   
+         New Perspectives on HTML5 and CSS3, 7th Edition
+            Project: V4
+            Author: Afrah Al-tamimi
+            Date:  05-27-2019 
+         
+            Filename: about.html
+         -->
+		  <meta charset="utf-8" />
+      <title>Pain Level</title>
+      <link href="style.css" rel="stylesheet"/>
+   </head>
+   <body>
+      <!--M3LO8 Demonstrate absolute or relative positioning -->
+      <div id="badge">
+         <img src="badge1.png" alt="metal"/>
+         <h3>Websites by Amy</h3>
+      </div>
+      <!--M2LO4B Demonstrate inline styles -this makes a nice page name-->
+      <h1 style="color: #252222; text-align: center;">Exercise at Home</h1>
+      <!--M1LO9 Demonstrate the use of inline images - this allows us to add an image-->
+      <header>
+         <img src="spine2.jpg" alt=" spine" />
+      </header>
+      <nav class="horiz">
+         <!--M1LO12 Create navigation using unordered lists - this allows us to be able to know how to get around in the website.-->
+         <!--M1LO13A Demonstrate a hyperlink to another page on your site -this is links to the about page-->
+         <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+			<li><a href = "contact.html">Contact</a></li>
+			<li><a href = "videos.html">Videos</a></li>
+            <li>
+				<a href = "exercises.html">Exercises</a>
+			</li>
+            <li><a href = "pain.html">Pain Management</a>
+   				<ul class="subnav">
+					<li><a href="exercises.html">Exercise</a></li>
+					<li><a href="medication.html">Medication</a></li>
+				</ul>
+			</li>
+      </ul>
+      </nav>
+	  <!--M6LO3 Demonstrate how to create a table -->
+<table>
+	<thead>
+		<tr>
+			<th colspan="2">Pain Description Scale</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>0</td>
+		<td>No pain, feeling normal</td>
+	</tr>
+	<tr class="minor head">
+	<!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in a table: this is two colomn span -->
+		<td colspan="2">
+			<h3>Minor</h3>
+			<h6>Able to adapt to the pain</h6>
+		</td>
+	</tr>
+	<tr class="minor">
+		<td>1<br>Very Mild</td>
+		<td>Very light, barely noticeable pain</td>
+	</tr>
+	<tr class="minor">
+		<td>2<br>Discomforting</td>
+		<td>Minor pain, like lightly pinching the fold of the skin</td>
+	</tr>
+	<tr class="minor">
+		<td>3<br>Tolerable</td>
+		<td>Very noticeable pain, like a doctor giving you and injection</td>
+	</tr>
+	<tr class="moderate head">
+		<td colspan="2">
+			<h3>Moderate</h3>
+			<h6>Interferes with many activities</h6>
+		</td>
+	</tr>
+	<tr class="moderate">
+		<td>4<br>Distressing</td>
+		<td>Storng, deep pain, like an average toothache</td>
+	</tr>
+	<tr class="moderate">
+		<td>5<br>Very Distressing</td>
+		<td>Strong, deep, piercing pain, such as a sprained ankle</td>
+	</tr>
+	<tr class="moderate">
+		<td>6<br>Intense</td>
+		<td>Strong, deep, piercing pain like several bee stings</td>
+	</tr>
+	<tr class="severe head">
+		<td colspan="2">
+			<h3>Severe</h3>
+			<h6>Pateint is disabled and is unable to function independantly</h6>
+		</td>
+	</tr>
+	<tr class="severe">
+		<td>7<br>Very Intense</td>
+		<td>Comparable to an average migrane headache</td>
+	</tr>
+	<tr class="severe">
+		<td>8<br>Utterly Horrble</td>
+		<td>Comparable to childbirth or a real bad migrane headache</td>
+	</tr>
+	<tr class="severe">
+		<td>10<br>Unmanagable Unspeakable</td>
+		<td>Pain so intense you will go unconscious shortly</td>
+	</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2">Courtesy <a href="http://remotemedicine.blogspot.com/2011/10/importance-of-pain-scale.html">Remote Medicine</a></td>
+		</tr>
+	</tfoot>
+</table>
+      <footer>
+         <h3>External Resources</h3>
+         <!--M1LO13C Demonstrate a hyperlink to an external page - this send us to another website for extra resources-->
+         <a href="https://lowbackpainprogram.com/hip-raise-test-for-back-pain/" style = "display: block">Hip Raise Benifits</a>
+         <!--M1LO10 Demonstrate the use of special characters from extended character sets - this allows us to add things like bullets-->
+      </footer>
+   </body>
+</html>

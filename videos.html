@@ -1,0 +1,63 @@
+<html>
+	<head>
+	      <!--   
+         New Perspectives on HTML5 and CSS3, 7th Edition
+            Project: V4
+            Author: Afrah Al-tamimi
+            Date:  05-27-2019 
+         
+            Filename: about.html
+         -->
+		  <meta charset="utf-8" />
+      <title>Videos</title>
+      <link href="style.css" rel="stylesheet"/>
+	</head>
+	<body>
+	      <!--M3LO8 Demonstrate absolute or relative positioning -->
+      <div id="badge">
+         <img src="badge1.png" alt="metal"/>
+         <h3>Websites by Amy</h3>
+      </div>
+      <!--M2LO4B Demonstrate inline styles -this makes a nice page name-->
+      <h1 style="color: #252222; text-align: center;">Exercise at Home</h1>
+      <!--M1LO9 Demonstrate the use of inline images - this allows us to add an image-->
+      <header>
+         <img src="spine2.jpg" alt=" spine" />
+      </header>
+      <nav class="horiz">
+         <!--M1LO12 Create navigation using unordered lists - this allows us to be able to know how to get around in the website.-->
+         <!--M1LO13A Demonstrate a hyperlink to another page on your site -this is links to the about page-->
+         <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+			<li><a href = "contact.html">Contact</a></li>
+			<li><a href = "videos.html">Videos</a></li>
+            <li>
+				<a href = "exercises.html">Exercises</a>
+			</li>
+			<!--M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas)-->
+            <li><a href = "pain.html">Pain Management</a>
+   				<ul class="subnav">
+					<li><a href="exercises.html">Exercise</a></li>
+					<li><a href="medication.html">Medication</a></li>
+				</ul>
+			</li>
+      </ul>
+      </nav>
+      <div class = "clear">
+      </div>
+	  
+	<p> Here you can find helpful videos and recourses to educate yourself. </p>
+
+	<!-- M8LO8 Demonstrate the use of the <video> element for embedding video in a Web page. Here I used the video element to add a video -->
+	 <video controls>
+		<source src="Low_Back_Pain.webm" type="video/webm">
+		Your browser does not support the video tag.
+	 </video>
+	<p>Used with permission from <a href="https://commons.wikimedia.org/wiki/File:Low_Back_Pain.webm">Low Back Pain Wiki</a></p>
+
+	<!--M8LO9  Demonstrate the use of the iframe element (HTML), this allows us to add material from another page -->
+	<iframe width="720" height="415" src="https://www.youtube.com/embed/A2Od2iJ-rRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<p>Used with permission from <a href="https://www.youtube.com/watch?v=A2Od2iJ-rRI">Top 3 Treatments for Degenerative Disc Disease-Low back exercises</a></p>
+	</body>
+</html>
